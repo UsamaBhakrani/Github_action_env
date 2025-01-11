@@ -9,7 +9,7 @@ env:
 jobs:
   test:
     env:
-      MONGODB_PASSWORD: 73189273189
+      MONGODB_PASSWORD: 731892731892
       MONGODB_USERNAME: oracle
       MONGODB_CLUSTER_ADDRESS: nodeexpressproject.kxoaosu.mongodb.net
       PORT: 3000
