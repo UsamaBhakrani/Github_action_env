@@ -5,13 +5,13 @@ on:
       - main
       - dev
 env:
-  MONGODB_DB_NAME: NodeExpressProject
+  MONGODB_DB_NAME: ${{ secrets.MONGODB_DB_NAME }}
 jobs:
   test:
     env:
-      MONGODB_PASSWORD: 731892731892
-      MONGODB_USERNAME: oracle
-      MONGODB_CLUSTER_ADDRESS: nodeexpressproject.kxoaosu.mongodb.net
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
+      MONGODB_CLUSTER_ADDRESS: ${{ secrets.MONGODB_CLUSTER_ADDRESS }}
       PORT: 3000
     environment: testing
     runs-on: ubuntu-latest
